@@ -1,1 +1,1 @@
-worker: python3 videomerge_bot.py
+worker: python3 bot.py
