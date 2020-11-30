@@ -1,5 +1,5 @@
 build:
   docker:
-    worker: videomerge_bot.py
+    worker: Dockerfile
 run:
   worker: python3 videomerge_bot.py
