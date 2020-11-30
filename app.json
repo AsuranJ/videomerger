@@ -1,25 +1,29 @@
 {
     "name": "Video-Merge-Bot",
     "description": "Telegram Video Merge Bot",
+    "repository": "https://github.com/AbirHasan2005/videomerge_bot",
     "logo": "https://telegra.ph/file/e15e9ac9c5885b015e3ab.jpg",
     "keywords": [
-      "python",
-      "telegram",
-      "ffmpeg"
+        "python",
+        "telegram",
+        "ffmpeg"
     ],
-    "repository": "https://github.com/AbirHasan2005/videomerge_bot.git",
-    "website": "https://github.com/AbirHasan2005/videomerge_bot",
-    "success_url": "https://github.com/AbirHasan2005/videomerge_bot",
-    "stack": "container",
-    "env": {
-      "ENV": {
-      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
-      "value": "ANYTHING"
+    "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     },
-      "API_TOKEN": {
-        "description": "The telegram bot token that you get from @BotFather.",
-        "value": "",
-        "required": true
-      }
+    "env": {
+        "API_TOKEN": {
+            "description": "Bot token from https://t.me/BotFather"
+            "value": "",
+            "required": true
+        }
     }
 }
