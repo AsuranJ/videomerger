@@ -24,6 +24,7 @@
     "env": {
         "API_TOKEN": {
             "description": "Bot token from https://t.me/BotFather"
+            "description": "Bot token from https://t.me/BotFather",
             "value": "",
             "required": true
         }
