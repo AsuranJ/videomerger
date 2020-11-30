@@ -1,8 +1,7 @@
-  
 {
     "name": "Video FFMPEG Bot",
     "description": "A Telegram Bot Which Allow Us To Merge Videos",
-    "repository": "https://github.com/AbirHasan2005/videomerge_bot/tree/master",
+    "repository": "https://github.com/usmanmughalji/videomerge_bot",
     "logo": "https://telegra.ph/file/9b248fae85c334e587eb4.jpg",
     "keywords": [
         "python",
@@ -11,8 +10,7 @@
     ],
     "buildpacks": [{
     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-  },
-  {
+  }, {
     "url": "heroku/python"
   }],
     "formation": {
@@ -23,7 +21,6 @@
     },
     "env": {
         "API_TOKEN": {
-            "description": "Bot token from https://t.me/BotFather"
             "description": "Bot token from https://t.me/BotFather",
             "value": "",
             "required": true
