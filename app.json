@@ -3,10 +3,9 @@
     "description": "Telegram Video Merge Bot",
     "logo": "https://telegra.ph/file/e15e9ac9c5885b015e3ab.jpg",
     "keywords": [
+      "python",
       "telegram",
-      "bot",
-      "video",
-      "merge"
+      "ffmpeg"
     ],
     "repository": "https://github.com/AbirHasan2005/videomerge_bot.git",
     "website": "https://github.com/AbirHasan2005/videomerge_bot",
