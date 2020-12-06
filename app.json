@@ -20,7 +20,7 @@
         }
     },
     "env": {
-        "API_TOKEN": {
+        "BOT_API": {
             "description": "Bot token from https://t.me/BotFather",
             "value": "",
             "required": true
