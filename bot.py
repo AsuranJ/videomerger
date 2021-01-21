@@ -55,9 +55,13 @@ def merge(message):
     )
 
     with open('out.mp4', 'rb') as video:
-        bot.send_video(chat_id, video)
+        #bot.send_video(chat_id, video)
+        subprocess.call(
+        ['curl', '-F', 'file=@'+video]
+        )
+        bot.send_message(chat_id, f"Video Uploaded!")
     users_files[chat_id] = []
-
+    
 
 @bot.message_handler(func=lambda message: True)
 def help(message):
